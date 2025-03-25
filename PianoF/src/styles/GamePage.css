@@ -1,0 +1,54 @@
+
+.plant-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; 화면 세로 중앙정렬을 위해 */
+    background-color: #fbfff9;
+  }
+
+
+  .plant {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #4CAF50;
+    line-height: 1;
+    height: 200px;
+    width: 70vh;
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 20px;
+    justify-content: flex-end;  
+  
+    display: flex;
+    justify-content: center;   /* 수평 가운데 */
+    align-items: flex-end;     /* 아래 정렬 */
+    white-space: pre;
+  }
+
+
+
+.plant-buttons {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;  /* 세로 방향 정렬 */
+    gap: 10px;                /* 버튼 간격 */
+    margin-top: 15px;
+    align-items: center;      /* 중앙 정렬 */
+  }
+  
+  .plant-buttons button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: crosshair;
+    transition: 0.2s ease;
+  }
+  
+  .plant-buttons button:hover {
+    background-color: #e0f5e6;
+  }
+  

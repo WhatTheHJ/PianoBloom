@@ -3,6 +3,7 @@ import PianoKey from "./PianoKey";
 import "../styles/piano.css";
 
 
+
 const notes = [
   { note: "C4", type: "white", left: 0 },
   { note: "C#4", type: "black", left: 35 },
@@ -34,14 +35,23 @@ const notes = [
 ];
 
 
-const Piano = () => {
+function Piano({ onKeyPress }) {
   return (
     <div className="piano">
       {notes.map((key, idx) => (
-        <PianoKey key={idx} note={key.note} type={key.type} left={key.left}/>
+        <PianoKey
+          key={idx}
+          note={key.note}
+          type={key.type}
+          left={key.left}
+          onKeyPress={onKeyPress}
+        />
+        
       ))}
+      
+       
     </div>
   );
-};
+}
 
 export default Piano;
